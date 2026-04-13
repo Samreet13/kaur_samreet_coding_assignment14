@@ -1,0 +1,25 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Run Lint
+        run: npm run lint
+
+      - name: Check Formatting
+        run: npm run format
+
+      - name: Run Tests
+        run: npm test
