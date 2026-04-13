@@ -1,6 +1,7 @@
+import React from 'react';
 function Home() {
   return (
-    <div style={{ padding: "20px", textAlign: "center" }}>
+    <div style={{ padding: '20px', textAlign: 'center' }}>
       <h1>Samreet Kaur</h1>
       <h3>Full Stack Web Development Student</h3>
 

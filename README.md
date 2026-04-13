@@ -8,35 +8,35 @@ This project is a multi-page portfolio website built using React and TypeScript.
 
 ## Features
 
-* Multi-page React application using React Router
-* Pages included:
+- Multi-page React application using React Router
+- Pages included:
+  - Home
+  - Work
+  - Skills
+  - Resources
+  - Developer Setup
 
-  * Home
-  * Work
-  * Skills
-  * Resources
-  * Developer Setup
-* Reusable components:
+- Reusable components:
+  - Card
+  - Table
+  - Text
+  - Navbar
 
-  * Card
-  * Table
-  * Text
-  * Navbar
-* Clean and responsive UI
-* Dockerized production build using nginx
-* Navigation between pages using React Router
+- Clean and responsive UI
+- Dockerized production build using nginx
+- Navigation between pages using React Router
 
 ---
 
 ## Technologies Used
 
-* React (Vite)
-* TypeScript
-* Docker
-* Nginx
-* ESLint
-* Prettier
-* Husky
+- React (Vite)
+- TypeScript
+- Docker
+- Nginx
+- ESLint
+- Prettier
+- Husky
 
 ---
 
@@ -67,13 +67,13 @@ http://localhost:5173
 ### Step 1: Build Docker Image
 
 ```bash
-docker build -t sidhu_samreet_coding_assignment14 .
+docker build -t kaur_samreet_coding_assignment14 .
 ```
 
 ### Step 2: Run Docker Container
 
 ```bash
-docker run -d -p 127.0.0.1:5575:5575 --name sidhu_samreet_coding_assignment14 sidhu_samreet_coding_assignment14
+docker run -d -p 127.0.0.1:5575:5575 --name kaur_samreet_coding_assignment14 kaur_samreet_coding_assignment14
 ```
 
 ### Step 3: Open in Browser
@@ -89,13 +89,13 @@ http://127.0.0.1:5575
 ### Stop container
 
 ```bash
-docker stop sidhu_samreet_coding_assignment14
+docker stop kaur_samreet_coding_assignment14
 ```
 
 ### Remove container
 
 ```bash
-docker rm sidhu_samreet_coding_assignment14
+docker rm kaur_samreet_coding_assignment14
 ```
 
 ---
@@ -126,8 +126,7 @@ nginx.conf
 
 ## Notes
 
-* This project reuses components created in a previous assignment (Component Library).
-* React Router is used for navigation between multiple pages.
-* Docker is used to build and serve the production version of the application using nginx.
-* The application runs on port **5575** as required.
-
+- This project reuses components created in a previous assignment (Component Library).
+- React Router is used for navigation between multiple pages.
+- Docker is used to build and serve the production version of the application using nginx.
+- The application runs on port **5575** as required.

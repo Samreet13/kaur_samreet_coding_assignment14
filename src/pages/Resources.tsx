@@ -1,12 +1,12 @@
-import Card from "../components/Card/Card";
+import React from 'react';
+import Card from '../components/Card/Card';
 
 function Resources() {
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: '20px' }}>
       <h1>Resources</h1>
 
-      <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-
+      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
         <Card
           title="React Documentation"
           description="Used to learn component-based development."
@@ -27,7 +27,6 @@ function Resources() {
           imageSrc="https://placehold.co/360x190"
           footerText="developer.mozilla.org"
         />
-
       </div>
     </div>
   );

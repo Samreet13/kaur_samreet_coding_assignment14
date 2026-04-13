@@ -1,33 +1,34 @@
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
     <nav
       style={{
-        background: "#111827",
-        padding: "15px",
-        display: "flex",
-        gap: "20px",
-        justifyContent: "center",
+        background: '#111827',
+        padding: '15px',
+        display: 'flex',
+        gap: '20px',
+        justifyContent: 'center',
       }}
     >
-      {["/", "/work", "/skills", "/resources", "/developer-setup"].map(
+      {['/', '/work', '/skills', '/resources', '/developer-setup'].map(
         (path, index) => {
-          const labels = ["Home", "Work", "Skills", "Resources", "Setup"];
+          const labels = ['Home', 'Work', 'Skills', 'Resources', 'Setup'];
           return (
             <Link
               key={path}
               to={path}
               style={{
-                color: "white",
-                textDecoration: "none",
-                fontWeight: "bold",
+                color: 'white',
+                textDecoration: 'none',
+                fontWeight: 'bold',
               }}
             >
               {labels[index]}
             </Link>
           );
-        }
+        },
       )}
     </nav>
   );

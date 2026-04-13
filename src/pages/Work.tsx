@@ -1,12 +1,12 @@
-import Card from "../components/Card/Card";
+import React from 'react';
+import Card from '../components/Card/Card';
 
 function Work() {
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: '20px' }}>
       <h1>My Work</h1>
 
-      <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-
+      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
         <Card
           title="Component Library"
           description="Reusable UI components built using React and Storybook."
@@ -27,7 +27,6 @@ function Work() {
           imageSrc="https://placehold.co/360x190"
           footerText="Tech: HTML, CSS, JavaScript"
         />
-
       </div>
     </div>
   );
